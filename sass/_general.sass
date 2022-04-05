@@ -1,0 +1,658 @@
+*
+  font-family: 'Roboto'
+  font-style: normal
+  font-weight: 300
+  color: #fff
+
+.text
+  &_blue
+    color: #1CA8C3
+  &_red
+    color: #FF5656
+
+.header
+  &_wrapper
+    height: 53px
+    background: #212121
+
+    .hamburger
+      display: none
+      width: 26px
+      height: 12px  
+      position: absolute
+      right: 11px
+      top: 11px
+
+      span
+        display: block
+        height: 2px
+        width: 100%
+        background: #fff
+        margin-bottom: 2px
+        transition: 0.5s all
+
+      &_active
+        span
+          &:nth-child(1)
+            transform: rotate(-45deg) translatey(4px) translatex(-2px) 
+          &:nth-child(2)
+            display: none
+          &:nth-child(3)
+            transform: rotate(45deg) translatey(-1px) translatex(1px) 
+      
+
+button
+  border: 0
+
+.menu_list
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  margin-bottom: 0
+  height: 53px
+  list-style-type: none
+  padding: 0 58px 0 58px
+
+.menu_item
+  font-size: 15px
+  border-right: 2px dotted black
+  height: 31px
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -ms-flex-direction: column
+  flex-direction: column
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center 
+
+  &_link
+    color: #FFFFFF
+    text-decoration: none
+    padding-right: 46px
+
+    &:hover
+      color: #464d48
+
+.menu_item:last-child
+  border: 0px
+
+/* Блок под навигацией
+
+.order_call_container
+  background: rgba(0, 0, 0, 0.6)
+  height: 87px
+
+.caption
+  font-family: 'Roboto'
+  font-style: normal
+  font-weight: 100
+  font-size: 13px
+
+.logo_container
+  display: inline-block
+  vertical-align: top
+
+.order_call_container
+  position: absolute
+  width: 100%
+
+.subheader
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+  padding: 19px 97px 19px 97px
+
+.call_to_action
+  display: inline-block
+  margin-right: 32px
+
+button.order_call_button
+  display: inline-block
+  vertical-align: top
+  width: 172px
+  height: 46px
+  font-weight: 400
+  font-size: 14px
+
+  /* identical to box height, or 329%
+  text-align: center
+  text-transform: uppercase
+  color: #FFFFFF
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+  background: -webkit-gradient(linear, left bottom, left top, from(#1EACC7), to(#4CE2FF))
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+  -webkit-box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+  border-radius: 4px
+  outline-style: none
+
+.call_to_action
+  .sm_text
+    display: block
+    font-family: 'Roboto'
+    font-style: normal
+    font-weight: 300
+    font-size: 12px
+    line-height: 14px
+    text-align: right
+    margin-top: 3px
+    padding: 0
+
+  .number
+    display: block
+    font-weight: 400
+    font-size: 22px
+    margin-top: 0px
+
+/* Промо секция
+
+.promo
+  background: url("../img/main_bg.jpg") center (center / cover) no-repeat
+  z-index: -1
+  min-height: 800px
+
+  .container
+    padding-top: 90px
+
+.promo_info
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -ms-flex-direction: column
+  flex-direction: column
+  -webkit-box-pack: start
+  -ms-flex-pack: start
+  justify-content: start
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  text-align: center
+
+  .main_title
+    font-weight: 900
+    font-size: 60px
+    text-transform: uppercase
+    margin: 0
+    margin-top: 52px
+    color: #FFFFFF
+
+  .invitation
+    font-weight: 700
+    font-size: 36px
+    line-height: 48px
+    text-transform: uppercase
+
+  .promo_desc
+    max-width: 985px
+    min-height: 173px
+    margin-top: 16px
+    font-weight: 400
+    font-size: 18px
+    line-height: 24px
+
+.application_button
+  font-weight: 400
+  font-size: 18px
+  width: 259px
+  height: 63px
+  margin-top: 115px
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+  background: -webkit-gradient(linear, left bottom, left top, from(#1EACC7), to(#4CE2FF))
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+  -webkit-box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
+  border-radius: 4px
+  text-transform: uppercase
+  text-align: center
+
+/* Блок с причинами
+
+.reasons
+  padding-bottom: 62px
+
+.reasons.container
+  min-height: 850px
+  padding-bottom: 64px
+
+button.button
+
+  &_black
+    width: 115px
+    height: 27px
+    
+    font-weight: 400
+    font-size: 11px
+    text-transform: uppercase
+    margin-top: 20px
+
+    color: #FFFFFF
+    background: #000000
+
+  &_white
+    
+    width: 115px
+    height: 27px
+    
+    font-weight: 400
+    font-size: 11px
+    text-transform: uppercase
+    margin-top: 55px
+
+    color: #000000
+    background: #ffffff
+
+
+.button_col
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  align-items: start
+
+.title
+  &_black
+    font-weight: 700
+    font-size: 38px
+    text-align: center
+    text-transform: uppercase
+    margin-top: 32px
+    color: #222222
+
+  &_white    
+    font-weight: 700
+    font-size: 38px
+    text-align: center
+    text-transform: uppercase
+    margin-top: 32px
+    color: #ffffff
+
+
+.reason_box
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  margin-top: 30px
+
+.logo_box
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  margin-left: 33px
+  width: 116px
+  height: 116px
+  border-radius: 50%
+  background: #1EACC7
+
+.reason_text
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -ms-flex-direction: column
+  flex-direction: column
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  margin-left: 25px
+  width: 371px
+  min-height: 150px
+  text-align: left
+
+.reason_title
+  font-weight: 400
+  font-size: 17px
+  font-style: normal
+  color: #1EACC7
+
+.reason_desc
+  font-size: 15px
+  line-height: 21px
+  color: #202020
+
+/* Mobile Block
+
+.mobile
+  min-height: 864px
+  background: url('../img/mobile_bg.png') center center/cover no-repeat
+  padding: 50px 0 78px 0
+
+  .container
+    padding: 0 23px
+    
+  &_item
+    position: relative
+    display: flex
+    justify-content: center
+
+    height: 280px
+    margin-top: 20px
+
+    &_text
+      font-weight: 400
+      font-size: 24px
+      line-height: 31px
+      height: inherit
+
+      display: flex
+      justify-content: center
+      align-items: center
+      text-align: center
+      text-transform: uppercase
+      color: #FFFFFF
+
+      width: 300px
+
+    &_plus
+      position: absolute
+      width: 29px
+      height: 29px
+      background: #000000
+      border-radius: 50%
+
+      bottom: 34px
+      left: 50%
+      transform: translateX(-50%)
+
+      display: flex
+      justify-content: center
+      align-items: center
+      cursor: pointer
+
+      
+
+      &_icon
+
+        background: url('../icon/plus.png') center center/cover no-repeat
+        width: 14px
+        height: 14px
+
+
+.bg
+  &1
+    background: url('../img/img_1.png') center center/ 320px  280px no-repeat
+  &2
+    background: url('../img/img_2.png') center center/ 320px  280px no-repeat
+  &3
+    background: url('../img/img_3.png') center center/ 320px  280px no-repeat
+  &4
+    background: url('../img/img_4.png') center center/ 320px  280px no-repeat
+  &5
+    background: url('../img/img_5.png') center center/ 320px  280px no-repeat
+  &6
+    background: url('../img/img_6.png') center center/ 320px  280px no-repeat
+
+.subtitle
+  &_black
+    margin-bottom: 10px
+    font-weight: 400
+    font-size: 17px
+
+    text-align: center
+    color: #222222
+    line-height: 21px
+
+  &_white
+    margin-bottom: 10px
+    font-weight: 400
+    font-size: 17px
+
+    text-align: center
+    color: #ffffff
+    line-height: 21px
+
+.car
+  &_black_bg
+    height: 500px
+    background: #070716
+
+
+  &_white_bg
+    height: 400px
+    background: url('../img/car_white_bg.png') center center/cover no-repeat
+
+
+
+  &_img
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+
+    margin-top: 54px
+
+.moto
+  position: relative
+  top: 210px
+  left: 50%
+  transform: translatex(-50%)
+  display: inline-block
+  font-size: 17px
+  line-height: 24px
+  font-weight: 300
+
+
+
+  text-align: center
+  color: #222222
+  text-transform: uppercase
+  
+
+
+// Блок с требованиями
+
+
+.requirements
+  padding: 66px 0 87px 0
+
+  &_block
+    margin: 33px 0
+
+  &_title
+    font-weight: 400
+    font-size: 22px
+
+  &_list
+    margin-top: 20px
+    list-style-type: none
+    padding: 0
+    &_item
+      position: relative
+      font-size: 17px
+      line-height: 26px
+      color: #222222
+      margin-left: 50px
+      vertical-align: middle
+      &.blue_check::before
+        position: absolute
+        display: inline-block
+        content: ''
+        width: 21px
+        height: 20px
+        background: url('../icon/blue_check_mark_icon.png') center center/cover no-repeat
+        left: -33px
+        top: 3px
+
+      &.red_check::before
+        position: absolute
+        display: inline-block
+        content: ''
+        width: 21px
+        height: 20px
+        background: url('../icon/red_check_mark_icon.png') center center/cover no-repeat
+        left: -33px
+        top: 3px
+
+
+  &_subtitle
+    margin-top: 25px
+    max-width: 450px
+    font-size: 17px
+    line-height: 24px
+
+
+// Блок с картой
+
+.map
+  background: url('../img/bg_map.png') center center/cover no-repeat
+  height: 717px
+  position: relative
+
+  .container
+    height: inherit
+
+  .look_map
+    position: absolute
+    text-align: center
+    text-transform: uppercase
+    font-weight: 400
+    font-size: 15px
+    line-height: 68px
+
+    color: #1FBAD6
+
+    bottom: 54px
+    left: 50%
+    transform: translatex(-50%)
+
+
+//footer nav
+footer
+  height: 156px
+  position: relative
+
+  .footer_container
+    display: flex
+    justify-content: space-between
+    padding: 54px 21px 40px 23px
+    > div
+      width: 33%
+      &:last-child
+        display: flex
+        justify-content: end
+    .sm
+      display: flex
+
+
+      &_link
+        text-decoration: none
+        
+        &_img
+          margin-right: 6px
+
+          background: #070716
+          border-radius: 50%
+          width: 32px
+          height: 32px
+          display: flex
+          justify-content: center
+          align-items: center
+
+            
+
+            
+
+ 
+    .footer_links
+    
+    .main_links_block
+      display: flex
+      justify-content: center
+      list-style-type: none
+      padding: 0
+
+      .main_link
+        position: relative
+        font-size: 15px
+        text-transform: uppercase
+        margin-right: 46px
+        & a
+          color: #070716
+          text-decoration: none
+
+        &:last-child
+          margin: 0
+
+      &::before
+        content: ''
+        position: absolute
+        width: 301px
+        height: 7px
+        top: 14px
+        left: 50%
+        transform: translateX(-50%)
+        background: #1FBAD6
+
+        
+    .sub_links_block
+      display: flex
+      justify-content: center
+      list-style-type: none
+      margin-top: 16px
+      padding: 0
+
+      .sub_link
+        position: relative
+        font-size: 11px
+        color: #999999
+        text-transform: uppercase
+        margin-right: 22px
+
+        &:last-child
+          margin: 0   
+
+    .language_link
+      display: flex
+      justify-content: center
+      text-transform: uppercase
+      text-decoration: none
+
+      margin-top: 19px
+
+
+
+  .store
+    display: flex
+    &_link
+      display: inline-block
+      text-decoration: none
+      
+
+      &_wrapper
+        display: flex
+        max-height: 27px 
+        max-width: 91px
+        margin-right: 5px
+
+  
+      &_icon
+        height: 100%
+        width: 100%
+        
+
+          
+

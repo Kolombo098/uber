@@ -1,0 +1,301 @@
+*{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    color: #fff;
+}
+
+header nav {
+    height: 53px;
+    background: #212121;
+}
+
+button{
+    border: 0;
+}
+
+
+.menu_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    height: 53px;
+    list-style-type: none;
+    padding: 0 58px 0 58px;
+}
+
+.menu_item{
+    font-size: 15px;
+
+    border-right: 2px dotted black;
+    height: 31px;
+
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    
+}
+
+.item_link{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-right: 30px;
+}
+
+.item_link:hover{
+    color: #464d48;
+}
+
+.menu_item:last-child{
+    border: 0px;
+}
+/* Блок под навигацией */
+
+.order_call_container{
+    background: rgba(0, 0, 0, 0.6);
+    min-height: 87px;
+
+}
+
+.caption{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+
+.logo_container{
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+.order_call_container {
+    position: absolute;
+    width: 100%;
+  
+}
+
+.subheader{
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 97px 19px 97px;
+}
+
+.call_to_action{
+    display: inline-block;
+    margin-right: 32px;
+    
+}
+
+button.order_call_button{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 172px;
+    height: 46px;
+
+    font-weight: 400;
+    font-size: 14px;
+    /* identical to box height, or 329% */
+
+    
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    outline-style: none;
+} 
+
+.call_to_action .sm_text{
+    display: block;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+
+    text-align: right;
+    margin-top: 3px;
+    padding: 0;
+}
+
+.call_to_action .number{
+    display: block;
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 0px;
+}
+
+
+/* Промо секция */
+
+
+.promo{
+    background: url("../img/main_bg.jpg") center center/cover no-repeat;
+    z-index: -1;
+
+    min-height: 800px;
+}
+
+.promo .container{
+    padding-top: 90px;
+}
+
+.promo_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+
+    min-height: 800px;
+
+}
+
+
+.promo_info .title{
+    font-weight: 900;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 52px;
+
+    color: #FFFFFF;
+}
+
+.promo_info .ivitation{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.promo_info .promo_dicr{
+    max-width: 985px;
+    height: 173px;
+
+    margin-top: 16px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.application_button{
+    font-weight: 400;
+    font-size: 18px;
+
+    width: 259px;
+    height: 63px;
+    margin-top: 115px;
+
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+/* Блок с причинами */
+
+.reasons{
+    height: 850px;
+}
+
+button.benefits{
+
+    width: 115px;
+    height: 27px;
+    
+    background: #000000;
+
+    font-weight: 400;
+    font-size: 11px;
+    text-transform: uppercase;
+
+    margin-top: 20px;
+
+    color: #FFFFFF;
+
+}
+.button_col{
+    display: flex;
+    justify-content: center;
+}
+
+.reason_main_title{
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 32px;
+    
+    color: #222222;
+}
+
+.reason_box{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.logo_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 33px;
+
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+
+    background: #1EACC7;
+}
+
+
+.reason_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+    
+    width: 371px;
+    height: 150px;
+    
+    text-align-last: left;
+}
+
+.reason_title{
+    font-weight: 400;
+    font-size: 17px;
+    font-style: normal;
+
+    color: #1EACC7;
+}
+
+.reason_desc{
+
+    font-size: 15px;
+    line-height: 21px;
+    color: #202020;
+}
+
